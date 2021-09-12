@@ -1,6 +1,7 @@
+import Slider from "./components/Slider";
 
 const App = () => (
-    <div>123</div>
+    <Slider />
 );
 
 export default App;
