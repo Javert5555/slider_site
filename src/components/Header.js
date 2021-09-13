@@ -3,7 +3,7 @@ import '../css/header.css'
 
 const Header = () => (
     <header className='header'>
-        <div className='header__logo'>
+        <div className='header__title'>
             Portfolio
         </div>
         <Navibar />
