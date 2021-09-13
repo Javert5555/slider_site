@@ -1,17 +1,14 @@
 import SliderItem from './SliderItem';
 import '../css/slider_style.css';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 
 const Slider = () => (
-    <section className="slider">
-        <SliderItem 
-            num={1}
-        />
-        <SliderItem 
-            num={2}
-        />
-        <SliderItem 
-            num={3}
-        />
+    <section className='slider'>
+        <Home />
+        <About />
+        <Contact />
     </section>
 );
 

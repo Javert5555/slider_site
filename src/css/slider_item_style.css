@@ -1,29 +1,30 @@
 .slider__item {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     /* flex: 0 0 300px; */
     height: 100vh;
     padding: 20px;
     font-size: 20px;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
+    color: #fff;
 }
 
-.item1 {
+.slider__item_home {
     background-image: url('../img/slide1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.item2 {
+.slider__item_about {
     background-image: url('../img/slide2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.item3 {
+.slider__item_contact {
     background-image: url('../img/slide3.jpg');
     background-repeat: no-repeat;
     background-size: cover;

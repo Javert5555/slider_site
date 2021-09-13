@@ -1,8 +1,8 @@
 import '../css/slider_item_style.css'
 
-const SliderItem = ({ num }) => (
-    <div className={`slider__item item${num}`}>
-        123
+const SliderItem = ({ num, innerComponent }) => (
+    <div key={`item${num}`} className={`slider__item item${num}`} id={`item${num}`}>
+        {innerComponent}
     </div>
 );
 
