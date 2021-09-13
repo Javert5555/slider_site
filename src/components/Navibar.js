@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Navibar = () => (
     <nav className='nav'>
-        <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
-        </ul>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/contact'>Contact</Link>
     </nav>
 );
 
