@@ -2,31 +2,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex: 0 0 300px; */
     width: 100%;
     height: 100vh;
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 20px;
     color: #fff;
 }
 
-.slider__item_home {
-    background-image: url('../img/slide1.jpg');
+.slider__item_home, .slider__item_about, .slider__item_contact {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    /* background-color: #000; */
+
+}
+
+.slider__item_home {
+    background-image: url('../img/slide1.jpg');
+
 }
 
 .slider__item_about {
     background-image: url('../img/slide2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .slider__item_contact {
     background-image: url('../img/slide3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }

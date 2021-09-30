@@ -7,7 +7,8 @@ body {
   padding: 0;
   line-height: 1.6;
   font-family: Arial, Helvetica, sans-serif;
-
+  overflow: hidden;
+  /* background-color: black; */
 }
 
 *, *:before, *:after {

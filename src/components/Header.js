@@ -3,9 +3,9 @@ import '../css/header.css'
 
 const Header = () => (
     <header className='header'>
-        <div className='header__title'>
+        {/* <div className='header__title'>
             Portfolio
-        </div>
+        </div> */}
         <Navibar />
     </header>
 );
