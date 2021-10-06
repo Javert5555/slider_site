@@ -1,31 +1,27 @@
-.slider__item {
+.main-page__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
-    /* padding: 20px; */
+    padding: 20px;
     font-size: 20px;
-    color: #fff;
-}
-
-.slider__item_home, .slider__item_about, .slider__item_contact {
+    scroll-snap-align: start;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* background-color: #000; */
+    background-color: #000;
+    color: aliceblue;
+}
+
+.main-page__item_home {
+    background-image: url('../img/slide-main.jpg');
 
 }
 
-.slider__item_home {
-    background-image: url('../img/slide1.jpg');
-
-}
-
-.slider__item_about {
+/* .main-page__item_revolver {
     background-image: url('../img/slide2.jpg');
 }
 
-.slider__item_contact {
+.main-page__item_spinnerCar {
     background-image: url('../img/slide3.jpg');
-}
+} */

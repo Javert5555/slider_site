@@ -1,7 +1,7 @@
-import '../css/slider_item_style.css';
+import '../css/main-page__item.css';
 
 const Home = () => (
-    <div className='slider__item slider__item_home'>
+    <div className='main-page__item main-page__item_home'>
         Home
     </div>
 );

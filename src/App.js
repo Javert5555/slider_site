@@ -1,6 +1,6 @@
 // import Navibar from './components/Navibar';
 import Header from './components/Header';
-import Main from './components/Main';
+import MainPage from './components/MainPage';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const App = () => (
     <Router>
         <Header />
-        <Main />
+        <MainPage />
     </Router>
 );
 

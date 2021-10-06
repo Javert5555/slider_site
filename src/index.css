@@ -7,7 +7,7 @@ body {
   padding: 0;
   line-height: 1.6;
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: black; */
 }
 
