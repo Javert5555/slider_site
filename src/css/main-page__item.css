@@ -18,6 +18,18 @@
 
 }
 
+.revolver {
+    max-width: 500px;
+    height: auto;
+}
+
+.spinner {
+    max-width: 600px;
+    height: auto;
+    
+}
+
+
 /* .main-page__item_revolver {
     background-image: url('../img/slide2.jpg');
 }
