@@ -1,9 +1,13 @@
-import '../css/slider_item_style.css';
+import '../css/main-page__item.css';
 
-const Home = () => (
-    <div className='slider__item slider__item_home'>
-        Home
-    </div>
-);
+const Home = ({ isView }) => {
+    // console.log(isView);
+    return (
+        <div className='main-page__item main-page__item_home'>
+            <h1 className="main-page__item_home__logo">R</h1>
+        </div>
+    );
+
+};
 
 export default Home;

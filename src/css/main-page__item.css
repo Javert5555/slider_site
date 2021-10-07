@@ -1,0 +1,58 @@
+.main-page__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    font-size: 20px;
+    scroll-snap-align: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #000;
+    color: aliceblue;
+}
+
+.main-page__item_home {
+    background-image: url('../img/slide-main.jpg');
+    background-position: center center;
+    font-family: blrun, sans-serif;
+}
+
+.main-page__item_home__logo {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+}
+
+.revolver {
+    max-width: 30%;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all linear 1s;
+}
+
+#revolver_active {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.spinner {
+    max-width: 800px;
+    height: auto;
+    
+}
+
+
+/* .main-page__item_revolver {
+    background-image: url('../img/slide2.jpg');
+}
+
+.main-page__item_spinnerCar {
+    background-image: url('../img/slide3.jpg');
+} */
