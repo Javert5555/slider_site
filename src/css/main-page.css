@@ -5,3 +5,9 @@
     margin: 0 auto;
     scroll-snap-type: y mandatory;
 }
+
+.gaps {
+    height: 1px;
+    background-color: black;
+    content: "";
+}
