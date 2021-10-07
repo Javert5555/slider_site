@@ -17,4 +17,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-family: blrun, sans-serif;
+}
+
+@font-face {
+  font-family: "blrun";  
+  src: url("./fonts/blrun.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
 }

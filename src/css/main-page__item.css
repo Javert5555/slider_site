@@ -1,4 +1,5 @@
 .main-page__item {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,16 +16,31 @@
 
 .main-page__item_home {
     background-image: url('../img/slide-main.jpg');
+    background-position: center center;
+    font-family: blrun, sans-serif;
+}
 
+.main-page__item_home__logo {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
 }
 
 .revolver {
-    max-width: 500px;
+    max-width: 30%;
     height: auto;
+    opacity: 0.1;
+    transition: all linear 1s;
+}
+
+#revolver_active {
+    opacity: 1;
 }
 
 .spinner {
-    max-width: 600px;
+    max-width: 800px;
     height: auto;
     
 }
