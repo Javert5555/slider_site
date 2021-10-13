@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { InView } from 'react-intersection-observer';
 import Home from './Home';
-import Revolver from './Revolver';
+import Weapon from './Weapon';
 import SpinnerCar from './SpinnerCar';
 import '../css/main-page.css';
 
-const mainPageItems = [Home, Revolver, SpinnerCar];
+const mainPageItems = [Home, Weapon, SpinnerCar];
 
 const MainPage = () => {
 
@@ -26,38 +26,6 @@ const MainPage = () => {
                     <div className="gaps" key={`gasp-${index}`}></div>
                 </div>
             ))}
-            {/* <InView>
-                {({ inView, ref, entry }) => {
-                    console.log(inView);
-                    return (
-                        <div ref={ref}>
-                            <Home />
-                        </div>
-                    );
-                }}
-            </InView>
-            <div className="gaps">123</div>
-            <InView>
-                {({ inView, ref, entry }) => {
-                    console.log(inView);
-                    return (
-                        <div ref={ref}>
-                            <Revolver />
-                        </div>
-                    );
-                }}
-            </InView>
-            <div className="gaps">123</div>
-            <InView>
-                {({ inView, ref, entry }) => {
-                    console.log(inView);
-                    return (
-                        <div ref={ref}>
-                            <SpinnerCar />
-                        </div>
-                    );
-                }}
-            </InView> */}
         </section>
     );
 };
