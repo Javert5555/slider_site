@@ -1,4 +1,4 @@
-import '../css/main-page__item.css';
+import '../../css/mp_components_styles/main-page__item.css';
 
 const Home = ({ isView }) => {
     // console.log(isView);

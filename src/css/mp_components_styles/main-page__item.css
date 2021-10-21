@@ -16,8 +16,39 @@
     color: aliceblue;
 }
 
+.main-page__item__a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: blrun, sans-serif;
+    padding: .2em;
+    transition: all linear .2s;
+}
+
+.main-page__item__a:after {
+    content: "";
+    /* position: absolute; */
+    display: block;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #838383;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.main-page__item__a:hover {
+    color: #ff0000;
+}
+
+.main-page__item__a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
 .main-page__item_home {
-    background-image: url('../img/slide-main.jpg');
+    background-image: url('../../img/slide-main.jpg');
     background-position: center center;
     font-family: blrun, sans-serif;
 }
@@ -30,20 +61,7 @@
     font-size: 7rem;
 }
 
-/* .main-page__item_spinnerCar {
-    background-image: url('../img/slide3.jpg');
-} */
-
-/* SpinnerCar */
-
-.spinner {
-    max-width: 800px;
-    height: auto;
-    
-}
-
-
-@keyframes neon-2 {
+@keyframes neon-1 {
 	from {
 		text-shadow: 0 0 5px #ff9100,
 		0 0 10px #ff9100,

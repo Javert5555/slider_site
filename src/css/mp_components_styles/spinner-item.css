@@ -1,0 +1,41 @@
+/* SpinnerCar */
+
+.main-page__item_spinnerCar {
+    height: 100vh;
+}
+
+.main-page__item_spinner__info {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.main-page__item_spinner__title {
+    color: #ffee00;
+    animation: 5s neon-1 alternate-reverse infinite;
+    margin: 3rem 0;
+}
+
+/* .about-spinner {
+    max-width: 400px;
+    margin-left: 100px;
+} */
+
+.spinner {
+    max-width: 1000px;
+    min-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 6rem auto;
+    /* align-self: center;
+    justify-content: center; */
+}
+
+.main-page__item_spinner__a {
+    max-width: 280px;
+    display: block;
+    margin: 6rem auto 0;
+}
+
