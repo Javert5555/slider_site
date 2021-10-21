@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
 import { InView } from 'react-intersection-observer';
-import Home from './Home';
-import Weapon from './Weapon';
-import SpinnerCar from './SpinnerCar';
+import Home from './main_page_components/Home';
+import Weapon from './main_page_components/Weapon';
+import SpinnerCar from './main_page_components/SpinnerCar';
+import Androids from './main_page_components/Androids';
 import '../css/main-page.css';
 
-const mainPageItems = [Home, Weapon, SpinnerCar];
+const mainPageItems = [Home, Weapon, SpinnerCar, Androids];
 
 const MainPage = () => {
 

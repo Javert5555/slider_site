@@ -1,0 +1,60 @@
+/* Weapon */
+
+.main-page__item_weapon {
+    /* justify-content: center; */
+}
+
+.main-page__item_weapon__info {
+    margin: 8% 0 0 5%;
+    max-width: 600px;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: opacity linear 1s, transform linear .5s;
+}
+
+#main-page__item_weapon__info_active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.main-page__item_weapon__title {
+    color: #ffee00;
+    animation: 5s neon-1 alternate-reverse infinite;
+}
+
+
+.weapon {
+    margin-left: 10%;
+    align-self: center;
+    max-width: 35%;
+    min-width: 300px;
+    height: auto;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity linear 1s, transform linear .5s;
+}
+
+#weapon_active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* About Weapon */
+
+.about-weapon {
+    margin: 1.2rem 0 0;
+}
+
+.about-weapon_last {
+    position: relative;
+}
+
+.about-weapon_last:after {
+    margin: 2.2rem 0;
+    content: "";
+    width: inherit;
+    height: 1px;
+    display: block;
+    background-color: #ff0000;
+
+}

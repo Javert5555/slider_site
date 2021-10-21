@@ -6,6 +6,7 @@ const Navibar = () => (
         <Link to='/'>home</Link>
         <Link to='/about'>weapon</Link>
         <Link to='/contact'>spinner</Link>
+        <Link to='/contact'>androids</Link>
     </nav>
 );
 
