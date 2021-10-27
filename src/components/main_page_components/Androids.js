@@ -1,5 +1,5 @@
 import '../../css/mp_components_styles/main-page__item.css';
-// import '../../css/mp_components_styles/spinner-item.css';
+import '../../css/mp_components_styles/androids-item.css';
 
 // import andrid from '../../img/new_car2.png';
 

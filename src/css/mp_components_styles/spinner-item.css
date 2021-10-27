@@ -2,40 +2,95 @@
 
 .main-page__item_spinnerCar {
     height: 100vh;
+    /* background-image: url('../../img/backgroundCar.jpg'); */
+
 }
+
+/* Info */
 
 .main-page__item_spinner__info {
     width: 100%;
     height: 100%;
-    text-align: center;
-
 }
 
 .main-page__item_spinner__title {
     color: #ffee00;
     animation: 5s neon-1 alternate-reverse infinite;
     margin: 3rem 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity linear 1s;
 }
 
-/* .about-spinner {
-    max-width: 400px;
-    margin-left: 100px;
-} */
+#main-page__item_spinner__title_active {
+    opacity: 1;
+}
+
+/* First info element */
+
+.first-info-element {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-spinner_first {
+    max-width: 30vw;
+    margin: 40px 0 0 40px;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity linear 1s, transform linear .7s;
+}
+
+#about-spinner_first_active {
+    opacity: 1;
+    transform: translateX(0);
+}
 
 .spinner {
-    max-width: 1000px;
-    min-width: 500px;
-    width: 100%;
-    height: auto;
+
+    width: 800px;
+    max-height: 260px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity linear 1s, transform linear .7s;
+}
+
+#spinner_active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Second info element */
+
+.about-spinner_second_down {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity linear 1s, transform linear .8s;
+}
+
+#about-spinner_second_down_active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-spinner_second {
+    margin: 2rem 0 0;
+}
+
+.about-spinner_second:after {
+    margin: 1.2rem 0;
+    content: "";
+    width: inherit;
+    height: 1px;
     display: block;
-    margin: 6rem auto;
-    /* align-self: center;
-    justify-content: center; */
+    background-color: #ff0000;
+
 }
 
 .main-page__item_spinner__a {
-    max-width: 280px;
+    text-align: center;
+    max-width: 400px;
     display: block;
-    margin: 6rem auto 0;
+    margin: 0 auto;
 }
-
