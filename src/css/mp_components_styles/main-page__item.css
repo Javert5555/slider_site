@@ -61,6 +61,15 @@
     font-size: 7rem;
 }
 
+.red-line {
+    margin: 1.2rem 0;
+    content: "";
+    width: inherit;
+    height: 1px;
+    display: block;
+    background-color: #ff0000;
+}
+
 @keyframes neon-1 {
 	from {
 		text-shadow: 0 0 5px #ff9100,

@@ -1,25 +1,28 @@
 /* Weapon */
 
 .main-page__item_weapon {
-    /* justify-content: center; */
+    background-image: url('../../img/rev_back7.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* z-index: 0; */
 }
 
 .main-page__item_weapon__info {
-    margin: 8% 0 0 5%;
+    margin: 10% 0 0 55%;
     max-width: 600px;
-    transform: translateY(20%);
-    opacity: 0;
-    transition: opacity linear 1s, transform linear .5s;
-}
-
-#main-page__item_weapon__info_active {
-    transform: translateX(0);
-    opacity: 1;
 }
 
 .main-page__item_weapon__title {
     color: #ffee00;
     animation: 5s neon-1 alternate-reverse infinite;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transition: opacity linear 1.5s;
+}
+
+#main-page__item_weapon__title_active {
+    opacity: 1;
 }
 
 
@@ -42,14 +45,29 @@
 /* About Weapon */
 
 .about-weapon {
+    transform: translateX(50%);
+    opacity: 0;
+    transition: opacity linear 1s, transform linear .7s;
+}
+
+#about-weapon_active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.main-page__item_weapon__title, .about-weapon__text {
+    text-align: right;
+}
+
+.about-weapon__text {
     margin: 1.2rem 0 0;
 }
 
-.about-weapon_last {
+.about-weapon__text_last {
     position: relative;
 }
 
-.about-weapon_last:after {
+.about-weapon__text_last:after {
     margin: 2.2rem 0;
     content: "";
     width: inherit;

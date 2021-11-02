@@ -36,6 +36,7 @@
     opacity: 0;
     transform: translateY(50%);
     transition: opacity linear 1s, transform linear .8s;
+    text-align: center;
 }
 
 #about-spinner_active {
