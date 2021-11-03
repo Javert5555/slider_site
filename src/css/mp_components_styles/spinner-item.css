@@ -1,7 +1,7 @@
 /* SpinnerCar */
 
 .main-page__item_spinnerCar {
-    background-image: url('../../img/backgroundCar.jpg');
+    background-image: url('../../img/22.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -17,7 +17,7 @@
 .main-page__item_spinner__title {
     color: #ffee00;
     animation: 5s neon-1 alternate-reverse infinite;
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: center;
     opacity: 0;
     transition: opacity linear 1.5s;
@@ -32,7 +32,7 @@
 /* About spinner */
 
 .about-spinner {
-    margin-top: 24%;
+    margin-top: 25%;
     opacity: 0;
     transform: translateY(50%);
     transition: opacity linear 1s, transform linear .8s;
