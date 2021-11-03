@@ -59,6 +59,19 @@
     top: 20%;
     transform: translate(-50%, -50%);
     font-size: 7rem;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.red-line {
+    margin: 1.2rem 0;
+    content: "";
+    width: inherit;
+    height: 1px;
+    display: block;
+    background-color: #ff0000;
 }
 
 @keyframes neon-1 {

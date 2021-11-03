@@ -1,0 +1,40 @@
+.follow-cursor {
+    display: block;
+    border: 2px solid #ffbb00;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
+    position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+    z-index: 999; /* чтобы элемент был над остальными элементами */
+    pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+    transition: all 0.1s;
+}
+
+.follow-cursor_inner {
+    width: 5px;
+    height: 5px;
+    /* transition: all .1s; */
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+
+}
+
+.follow-cursor_inner_active {
+    width: 20px;
+    height: 20px;
+}
+
+.follow-cursor_external {
+    width: 30px;
+    height: 30px;
+    transition: all .2s;
+}
+  
+  /* Активный класс для кружка при наведении на ссылку */
+  /* .follow-cursor_active {
+    height: 128px;
+    width: 128px;
+    border-width: 2px;
+    background: rgba(13,110,253,0.32);
+  } */

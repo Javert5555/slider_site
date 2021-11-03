@@ -8,6 +8,8 @@
 
 .gaps {
     height: 1px;
+    width: 100%;
     background-color: black;
     content: "";
+    z-index: 9;
 }
