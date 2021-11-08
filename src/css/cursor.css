@@ -1,6 +1,6 @@
 .follow-cursor {
     display: block;
-    border: 2px solid #ffbb00;
+    border: 1px solid #ff7b00;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -8,21 +8,22 @@
     position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
     z-index: 999; /* чтобы элемент был над остальными элементами */
     pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
-    transition: all 0.1s;
+    /* transition: all 0.1s; */
 }
 
 .follow-cursor_inner {
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
     /* transition: all .1s; */
-    background-color: #ffbb00;
-    border-color: #ffbb00;
+    background-color: #ff7b00;
+    border-color: #ff7b00;
 
 }
 
 .follow-cursor_inner_active {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
 }
 
 .follow-cursor_external {
