@@ -5,7 +5,7 @@ import '../../css/mp_components_styles/spinner-item.css';
 
 // import andrid from '../../img/new_car2.png';
 
-const Androids = ({ isView }) => {
+const AndroidsItem = ({ isView }) => {
     let isActiveAndroid = isView ? {
         img: 'android_active',
         title: 'main-page__item_android__title_active',
@@ -33,4 +33,4 @@ const Androids = ({ isView }) => {
     );
 };
 
-export default Androids;
+export default AndroidsItem;
