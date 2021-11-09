@@ -24,6 +24,7 @@
 .follow-cursor_inner_active {
     width: 22px;
     height: 22px;
+    transition: all linear .2s;
 }
 
 .follow-cursor_external {

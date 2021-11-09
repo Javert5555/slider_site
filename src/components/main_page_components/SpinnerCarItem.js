@@ -1,7 +1,7 @@
 import '../../css/mp_components_styles/main-page__item.css';
 import '../../css/mp_components_styles/spinner-item.css';
 
-const SpinnerCar = ({ isView }) => {
+const SpinnerCarItem = ({ isView }) => {
     let isActiveSpinner = isView ? {
         img: 'spinner_active',
         title: 'main-page__item_spinner__title_active',
@@ -27,6 +27,6 @@ const SpinnerCar = ({ isView }) => {
     );
 };
 
-export default SpinnerCar;
+export default SpinnerCarItem;
 
 // className='spinner' id={isActiveSpinner}

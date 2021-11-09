@@ -1,13 +1,12 @@
 import React from 'react';
 import { InView } from 'react-intersection-observer';
 import Home from './main_page_components/Home';
-import Weapon from './main_page_components/Weapon';
-import SpinnerCar from './main_page_components/SpinnerCar';
-import Androids from './main_page_components/Androids';
+import WeaponItem from './main_page_components/WeaponItem';
+import SpinnerCarItem from './main_page_components/SpinnerCarItem';
+import AndroidsItem from './main_page_components/AndroidsItem';
 import '../css/main-page.css';
-import Cursor from './Cursor';
 
-const mainPageItems = [Home, Weapon, SpinnerCar, Androids];
+const mainPageItems = [Home, WeaponItem, SpinnerCarItem, AndroidsItem];
 
 const MainPage = () => {
 
@@ -27,7 +26,6 @@ const MainPage = () => {
                     <div className="gaps" key={`gasp-${index}`}></div>
                 </div>
             ))}
-            <Cursor />
         </section>
     );
 };
