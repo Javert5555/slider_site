@@ -1,0 +1,54 @@
+/* Weapon */
+
+.weapon-page {
+    background-color: #000000;
+}
+
+p {
+    margin: 0;
+}
+
+/* Intro */
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    background: url('../../img/weapon/rev_back5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}
+
+.intro__title {
+    font-size: 5rem;
+    color: #920000;
+    position: absolute;
+    left: 75%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+/* Kinetic weapon */
+
+.kinetic-weapon {
+    /* height: 500px; */
+    width: 100%;
+    background: linear-gradient(45deg, #303030, #000000);
+}
+
+.kinetic-weapon__title {
+    color: #fff;
+}
+
+.kinetic-weapon__info {
+    display: flex;
+}
+
+.kinetic-weapon__info__img {
+    width: 400px;
+    height: 300px;
+    margin: 2rem;
+    border: 1px solid #920000;
+}
+

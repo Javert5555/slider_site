@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../css/mp_components_styles/main-page__item.css';
 import '../../css/mp_components_styles/androids-item.css';
 import '../../css/mp_components_styles/spinner-item.css';
@@ -25,7 +26,7 @@ const AndroidsItem = ({ isView }) => {
                     
                     <p className='red-line'></p>
                     <div className='main-page__item_android__a'>
-                        <a href='#' className='main-page__item__a'>read more...</a>
+                        <Link to='/androids' className='main-page__item__a'>read more...</Link>
                     </div>
                 </div>
             </div>
