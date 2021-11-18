@@ -1,11 +1,26 @@
 /* Weapon */
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .weapon-page {
     background-color: #000000;
+    position: relative;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 p {
     margin: 0;
+}
+
+.weapon-text {
+    margin-bottom: 1em;
+}
+
+.weapon-text:last-child {
+    margin-bottom: 0;
 }
 
 /* Intro */
@@ -13,42 +28,75 @@ p {
 .intro {
     height: 100vh;
     width: 100%;
-    background: url('../../img/weapon/rev_back5.jpg') no-repeat;
+    background: url('../../img/weapon/gun.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
     position: relative;
+    /* z-index: 1; */
+}
+
+.intro__filter {
+    width: inherit;
+    height: inherit;
+    background-color: #363636;
+    opacity: 0.3;
+    z-index: 2;
 }
 
 .intro__title {
     font-size: 5rem;
     color: #920000;
     position: absolute;
-    left: 75%;
-    top: 25%;
+    left: 25%;
+    top: 75%;
     transform: translate(-50%, -50%);
 }
 
 /* Kinetic weapon */
 
 .kinetic-weapon {
-    /* height: 500px; */
     width: 100%;
-    background: linear-gradient(45deg, #303030, #000000);
+    background: #101010;
 }
 
-.kinetic-weapon__title {
+.weapon-title {
     color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.weapon-title::after {
+    content: "";
+    margin: .4em 0 0;
+    width: inherit;
+    height: 1px;
+    display: block;
+    background-color: #920000;
 }
 
 .kinetic-weapon__info {
     display: flex;
+    padding: 2em 0;
 }
 
 .kinetic-weapon__info__img {
-    width: 400px;
-    height: 300px;
-    margin: 2rem;
+    width: 600px;
+    height: auto;
+    margin: 0 2rem;
     border: 1px solid #920000;
 }
 
+.kinetic-weapon__info__img-title {
+    font-size: 1.1rem;
+    color: #777777;
+    margin-top: .2em;
+    text-align: center;
+}
+
+.kinetic-weapon__info__text {
+    font-size: 1.1rem;
+    color: #777777;
+}
