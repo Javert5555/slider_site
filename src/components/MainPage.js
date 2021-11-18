@@ -13,7 +13,7 @@ const MainPage = () => {
     return (
         <section className='main-page'>
             {mainPageItems.map((Item, index) => (
-                <div className='container' key={index}>
+                <div className='page' key={index}>
                     <InView key={`main-page__item-${index}`}>
                         {({ inView, ref }) => {
                             return (

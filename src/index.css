@@ -4,7 +4,8 @@
 
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   cursor: none;
+}
+
+.container {
+  padding: 1em 2em;
 }
 
 @font-face {
