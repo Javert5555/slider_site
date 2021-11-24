@@ -55,7 +55,7 @@ p {
 
 /* Kinetic weapon */
 
-.kinetic-weapon {
+.weapons-page {
     width: 100%;
     background: #101010;
 }
@@ -77,26 +77,29 @@ p {
     background-color: #920000;
 }
 
-.kinetic-weapon__info {
+.weapons-page__info {
     display: flex;
     padding: 2em 0;
 }
 
-.kinetic-weapon__info__img {
+.weapons-page__info__img {
     width: 600px;
     height: auto;
     margin: 0 2rem;
     border: 1px solid #920000;
 }
 
-.kinetic-weapon__info__img-title {
+.weapons-page__info__img-title {
     font-size: 1.1rem;
     color: #777777;
     margin-top: .2em;
     text-align: center;
 }
 
-.kinetic-weapon__info__text {
+.weapons-page__info__text {
     font-size: 1.1rem;
     color: #777777;
 }
+
+/* Energy Weapons */
+

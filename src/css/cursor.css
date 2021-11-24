@@ -1,6 +1,6 @@
 .follow-cursor {
     display: block;
-    border: 1px solid #920000;
+    border: 1px solid #b10000;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -38,5 +38,5 @@
     height: 128px;
     width: 128px;
     border-width: 2px;
-    background: rgba(13,110,253,0.32);
+    background: #cf7c00;
   } */
