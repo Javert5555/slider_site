@@ -1,10 +1,10 @@
 import React from "react";
 
-const WeaponIntro = () => (
+const WeaponsIntro = () => (
     <div className='intro'>
         <div className='intro__filter'></div>
-        <h1 className='intro__title'>weapon</h1>
+        <h1 className='intro__title'>weapons</h1>
     </div>
 );
 
-export default WeaponIntro;
+export default WeaponsIntro;

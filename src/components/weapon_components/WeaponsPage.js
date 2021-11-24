@@ -1,18 +1,18 @@
 import React from "react";
 import { InView } from 'react-intersection-observer';
-import WeaponIntro from "./WeaponIntro";
-import KineticWeapon from "./KineticWeapon";
+import WeaponsIntro from "./WeaponsIntro";
+import KineticWeapons from "./KineticWeapons";
 import '../../css/weapon_components_styles/weapon.css';
 
 
-const WeaponPage = () => (
+const WeaponsPage = () => (
     <div className='weapon-page'>
-        <WeaponIntro />
-        <KineticWeapon />
+        <WeaponsIntro />
+        <KineticWeapons />
     </div>
 );
 
-export default WeaponPage;
+export default WeaponsPage;
 
     // <InView>
     //     {({ inView, ref }) => {
