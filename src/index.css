@@ -33,6 +33,28 @@ a {
   padding: 1em 2em;
 }
 
+/* Anchor */
+
+.anchor {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #646668;
+  border-radius: 50%;
+  color: #ffffff;
+  border: 2px solid #646668;
+}
+
+a.anchor:hover {
+  color: #646668;
+  background-color: #ffffff;
+}
+
 @font-face {
   font-family: "blrun";  
   src: url("./fonts/blrun.ttf") format("truetype"); 
