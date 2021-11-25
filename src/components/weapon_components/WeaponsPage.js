@@ -1,7 +1,8 @@
-import React from "react";
-import { InView } from 'react-intersection-observer';
-import WeaponsIntro from "./WeaponsIntro";
-import KineticWeapons from "./KineticWeapons";
+import React from 'react';
+import WeaponsIntro from './WeaponsIntro';
+import KineticWeapons from './KineticWeapons';
+import EnergyWeapons from './EnergyWeapnos';
+import Anchor from '../Anchor';
 import '../../css/weapon_components_styles/weapon.css';
 
 
@@ -9,6 +10,8 @@ const WeaponsPage = () => (
     <div className='weapon-page'>
         <WeaponsIntro />
         <KineticWeapons />
+        <EnergyWeapons />
+        <Anchor />
     </div>
 );
 
