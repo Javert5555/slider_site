@@ -1,4 +1,4 @@
-import React, { useState, Component, Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import '../css/cursor.css';
 
 
