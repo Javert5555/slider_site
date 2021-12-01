@@ -1,13 +1,14 @@
 :root {
-    --transition-time: 1s;
+    --transition-time: .7s;
 }
-/* Weapon */
 
 ::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
-.weapon-page {
+/* minor-page */
+
+.minor-page {
     background-color: #000000;
     position: relative;
     overflow-y: scroll;
@@ -20,28 +21,29 @@ p {
     margin: 0;
 }
 
-.weapon-text {
-    margin-bottom: 1em;
-}
-
-.weapon-text:last-child {
-    margin-bottom: 0;
-}
-
 /* Intro */
 
-.intro {
+.minor-pages__intro {
     height: 100vh;
     width: 100%;
-    background: url('../../img/weapon/gun.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
     color: #fff;
     position: relative;
     /* z-index: 1; */
 }
 
-.intro__filter {
+.minor-pages__intro_weapons {
+    background: url('../../img/weapon/gun_back.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.minor-pages__intro_spinners {
+    background: url('../../img/spinner/spinner_back.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.minor-pages__intro__filter {
     width: inherit;
     height: inherit;
     background-color: #363636;
@@ -49,31 +51,48 @@ p {
     z-index: 2;
 }
 
-.intro__title {
+.minor-pages__intro__title {
     font-size: 5rem;
     color: #920000;
     position: absolute;
-    left: 25%;
-    top: 75%;
     transform: translate(-50%, -50%);
 }
 
-/* Kinetic weapon */
+.minor-pages__intro_weapons .minor-pages__intro__title {
+    left: 25%;
+    top: 75%;
+}
 
-.weapons-page {
+.minor-pages__intro_spinners  .minor-pages__intro__title{
+    left: 75%;
+    top: 75%;
+}
+
+/* info / .minor-pages */
+
+.minor-pages {
     width: 100%;
     background: #101010;
 }
 
-.weapon-title {
+.minor-pages__text {
+    margin-bottom: 1em;
+}
+
+.minor-pages__text:last-child {
+    margin-bottom: 0;
+}
+
+.minor-pages__title {
     color: #fff;
     text-align: center;
     padding: 1em 0 1.5em;
     max-width: 60vw;
     margin: 0 auto;
+    font-size: 2rem;
 }
 
-.weapon-title::after {
+.minor-pages__title::after {
     content: "";
     margin: .4em 0 0;
     width: inherit;
@@ -82,47 +101,51 @@ p {
     background-color: #920000;
 }
 
-.weapons-page__info {
+.minor-pages__info {
     display: flex;
     padding: 2em 0;
     opacity: 0;
 }
 
-#weapons-page__info_active {
+.minor-pages__info:last-child {
+    padding-bottom: 0;
+}
+
+#minor-pages__info_active {
     opacity: 1;
     transition: opacity linear var(--transition-time);
 }
 
-.weapons-page__info__img-container {
+.minor-pages__info__img-container {
     transform: translateX(-50%);
 }
 
-#weapons-page__info__img-container_active {
+#minor-pages__info__img-container_active {
     transform: translateX(0);
     transition: all linear var(--transition-time);
 }
 
-.weapons-page__info__img {
+.minor-pages__info__img {
     width: 600px;
     height: auto;
     margin: 0 2rem;
     border: 1px solid #920000;
 }
 
-.weapons-page__info__img-title {
+.minor-pages__info__img-title {
     font-size: 1.1rem;
     color: #777777;
     margin-top: .2em;
     text-align: center;
 }
 
-.weapons-page__info__text {
+.minor-pages__info__text {
     font-size: 1.1rem;
     color: #777777;
     transform: translateX(50%);
 }
 
-#weapons-page__info__text_active {
+#minor-pages__info__text_active {
     transform: translateX(0);
     transition: all linear var(--transition-time);
 }

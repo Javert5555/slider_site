@@ -31,22 +31,3 @@ const MainPage = () => {
 };
 
 export default MainPage;
-
-// <InView>
-// {({ inView, ref, entry }) => {
-//     console.log(inView ? inView : inView)
-//     return (
-//         <div ref={ref}>
-//             <h2>{`Header inside viewport ${inView}.`}</h2>
-//         </div>
-//     );
-// }}
-// </InView>
-{/* <div className={`main-page__item ${modifClassName}`}>
-        <Item />
-</div> */}
-{/* <Switch>
-<Route exact path="/" component={Home} />
-<Route exact path="/about" component={About} />
-<Route exact path="/contact" component={Contact} />
-</Switch> */}
