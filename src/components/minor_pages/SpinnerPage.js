@@ -1,6 +1,8 @@
 import React from 'react';
 import MinorPageIntro from './minor_page_components/MinorPageIntro';
 import MinorPageSection from './minor_page_components/MinorPageSection';
+import MinorPageFooter from './minor_page_components/MinorPageFooter';
+
 import Anchor from '../Anchor';
 import '../../css/minor_page_components_styles/minor-pages.css';
 
@@ -54,32 +56,13 @@ const WeaponsPage = () => (
             typeIntro = {'minor-pages__intro_spinners'}
 
         />
-
         {minorPages.map((minorPage) => (
             <MinorPageSection
                 {...minorPage}
                 key={`minorPageSection_${minorPage.title.trim()}`}
             />
         ))}
-
-        {/* <MinorPageSection
-            texts = {bearingScrewsOrFixedWingScrews.texts}
-            images = {bearingScrewsOrFixedWingScrews.images}
-            imgTitles = {bearingScrewsOrFixedWingScrews.imgTitles}
-            title = {bearingScrewsOrFixedWingScrews.title}
-        />
-        <MinorPageSection
-            texts = {convertoplan.texts}
-            images = {convertoplan.images}
-            imgTitles = {convertoplan.imgTitles}
-            title = {convertoplan.title}
-        />
-        <MinorPageSection
-            texts = {fluidicPropulsionSystems.texts}
-            images = {fluidicPropulsionSystems.images}
-            imgTitles = {fluidicPropulsionSystems.imgTitles}
-            title = {fluidicPropulsionSystems.title}
-        /> */}
+        <MinorPageFooter />
         <Anchor />
     </div>
 );

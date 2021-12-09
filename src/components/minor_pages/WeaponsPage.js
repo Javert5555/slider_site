@@ -1,8 +1,11 @@
 import React from 'react';
 import MinorPageIntro from './minor_page_components/MinorPageIntro';
 import MinorPageSection from './minor_page_components/MinorPageSection';
+import MinorPageFooter from './minor_page_components/MinorPageFooter';
 import Anchor from '../Anchor';
 import '../../css/minor_page_components_styles/minor-pages.css';
+import '../../css/minor_page_components_styles/minor-pages_footer.css';
+// import '../../css/minor_page_components_styles/minor-pages.css';
 
 import zkzm from '../../img/weapon/zkzm.jpg'
 import blLaser from '../../img/weapon/bl_laser.jpg';
@@ -27,6 +30,9 @@ const kineticWeapons = {
     'title': 'kinetic weapons',
 };
 
+let minorPages = [energyWeapons, kineticWeapons];
+
+
 
 const WeaponsPage = () => (
     <div className='minor-page'>
@@ -34,18 +40,13 @@ const WeaponsPage = () => (
             title = {'weapons'}
             typeIntro = {'minor-pages__intro_weapons'}
         />
-        <MinorPageSection
-            texts = {kineticWeapons.texts}
-            images = {kineticWeapons.images}
-            imgTitles = {kineticWeapons.imgTitles}
-            title = {kineticWeapons.title}
-        />
-        <MinorPageSection
-            texts = {energyWeapons.texts}
-            images = {energyWeapons.images}
-            imgTitles = {energyWeapons.imgTitles}
-            title = {energyWeapons.title}
-        />
+        {minorPages.map((minorPage) => (
+            <MinorPageSection
+                {...minorPage}
+                key={`minorPageSection_${minorPage.title.trim()}`}
+            />
+        ))}
+        <MinorPageFooter />
         <Anchor />
     </div>
 );

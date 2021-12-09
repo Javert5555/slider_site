@@ -43,6 +43,12 @@ p {
     background-position: center center;
 }
 
+.minor-pages__intro_androids {
+    background: url('../../img/androids/androids_back1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .minor-pages__intro__filter {
     width: inherit;
     height: inherit;
@@ -68,7 +74,12 @@ p {
     top: 75%;
 }
 
-/* info / .minor-pages */
+.minor-pages__intro_androids  .minor-pages__intro__title{
+    left: 25%;
+    top: 75%;
+}
+
+/* .minor-pages  info / section */
 
 .minor-pages {
     width: 100%;
@@ -85,21 +96,36 @@ p {
 
 .minor-pages__title {
     color: #fff;
+    opacity: 0;
     text-align: center;
     padding: 1em 0 1.5em;
     max-width: 60vw;
     margin: 0 auto;
     font-size: 2rem;
+
+}
+
+#minor-pages__title_active {
+    opacity: 1;
+    transition: all linear 1.2s;
+
 }
 
 .minor-pages__title::after {
     content: "";
     margin: .4em 0 0;
-    width: inherit;
+    width: 0;
     height: 1px;
     display: block;
     background-color: #920000;
 }
+
+#minor-pages__title-container_active .minor-pages__title::after {
+    width: 100%;
+    transition: all linear 1.2s;
+
+}
+
 
 .minor-pages__info {
     display: flex;

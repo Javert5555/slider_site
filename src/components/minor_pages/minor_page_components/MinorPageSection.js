@@ -6,7 +6,24 @@ const MinorPageSection = ({ texts, images, imgTitles, title }) => {
 
     return (
         <section className='container minor-pages'>
-            <h1 className='minor-pages__title'>{title}</h1>
+            <InView>
+                {({ inView, ref }) => {
+                    let isActiveMinorPageTitle = inView ?
+                        {
+                            activeTitleContainer: 'minor-pages__title-container_active',
+                            activeTitle: 'minor-pages__title_active',
+                        } : 
+                        {
+                            activeTitleContainer: '',
+                            activeTitle: '',
+                        };
+                    return(
+                        <div ref={ref} id={isActiveMinorPageTitle.activeTitleContainer}>
+                            <h1 className='minor-pages__title' id={isActiveMinorPageTitle.activeTitle}>{title}</h1>
+                        </div>
+                    );
+                }}
+            </InView>
             {texts.map((text, i) => (
                 <InView key={`${imgTitles[i].trim()}`}>
                     {({ inView, ref }) => {
